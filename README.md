@@ -1,5 +1,5 @@
 # Munchausen Actor Critic using PyTorch
-The code was adapted from [Toshiki Watanabe](https://github.com/ku2482/sac-discrete.pytorch), please check original page for update and credit.
+The code was adapted from [Toshiki Watanabe](https://github.com/ku2482/sac-discrete.pytorch), please check the original page for update and credit.
 
 The base algorithm is SAC discrete [1] for my own research purpose, might add the continuous version later.
 
