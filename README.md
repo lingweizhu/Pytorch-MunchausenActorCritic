@@ -5,7 +5,7 @@ The base algorithm is SAC discrete [1] for my own research purpose, might add th
 
 
 ## Munchausen Reinforcement Learning [2]
-The original paper introduces Munchausen trick only on top of DQN, here I tried to extend it to actor critic style, this requires exploration on the suitable policy loss.
+The original paper introduces Munchausen trick only on top of DQN, here I try to extend it to actor critic style, this requires exploration on the suitable policy loss.
 
 
 ## References
