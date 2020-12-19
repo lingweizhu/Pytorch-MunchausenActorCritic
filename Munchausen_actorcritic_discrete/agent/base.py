@@ -4,8 +4,8 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from sacd.memory import LazyMultiStepMemory, LazyPrioritizedMultiStepMemory
-from sacd.utils import update_params, RunningMeanStats
+from Munchausen_actorcritic_discrete.memory import LazyMultiStepMemory, LazyPrioritizedMultiStepMemory
+from Munchausen_actorcritic_discrete.utils import update_params, RunningMeanStats
 
 
 class BaseAgent(ABC):

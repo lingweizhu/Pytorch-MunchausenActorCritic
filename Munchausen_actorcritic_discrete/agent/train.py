@@ -1,10 +1,7 @@
 import os
 import yaml
 import argparse
-from sacd.env import make_pytorch_env
-from sacd.agent import SacdAgent
-from micvi.agent import MicviAgent
-from cvi.agent import CviAgent
+from Munchausen_actorcritic_discrete.env import make_pytorch_env
 from Munchausen_actorcritic_discrete.agent import MunchausenACAgent
 
 def run(args):
@@ -20,15 +17,7 @@ def run(args):
     name = args.config.split('/')[-1].rstrip('.yaml')
     log_dir = os.path.join('logs', args.env_id, name, str(args.seed))
 
-    # Create the agent.
-    '''
-    Agent = {"sacd": SacdAgent,
-             "micvi": MicviAgent,
-             "micvi_2.0": MicviAgent,
-             "dspi": MicviAgent,
-             "cvi": CviAgent,
-            }[name]
-    '''
+    # create the agent
     Agent = MunchausenACAgent
     agent = Agent(
         env=env, test_env=test_env, log_dir=log_dir, device=args.device,

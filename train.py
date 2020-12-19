@@ -1,7 +1,7 @@
 import os
 import yaml
 import argparse
-from sacd.env import make_pytorch_env
+from Munchausen_actorcritic_discrete.env import make_pytorch_env
 from Munchausen_actorcritic_discrete.agent import MunchausenACAgent
 
 
